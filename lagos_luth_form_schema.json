@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.2",
+  "form_id": "LAGOS_LUTH_PATIENT_TELECONSULTATION",
+  "title": "Patient Clinical and Teleconsultation Record",
+  "is_fictional": true,
+  "warning": "Demonstration data only. Never copy these values into a real patient record.",
+  "field_types": {
+    "patient_record_id": {
+      "type": "string",
+      "required": true,
+      "section": "Case identification"
+    },
+    "teleconsult_id": {
+      "type": "string",
+      "required": true,
+      "section": "Teleconsultation"
+    },
+    "consultation_datetime_utc": {
+      "type": "string",
+      "required": true,
+      "section": "Teleconsultation"
+    },
+    "consultation_channel": {
+      "type": "string",
+      "required": true,
+      "section": "Teleconsultation"
+    },
+    "ai_assessment_tier": {
+      "type": "string",
+      "allowed": [
+        "Green",
+        "Amber",
+        "Red",
+        "Not assessed"
+      ],
+      "required": false,
+      "section": "AI assessment"
+    },
+    "assessment_agreement": {
+      "type": "string",
+      "allowed": [
+        "Agrees",
+        "Contradicts",
+        "No photo",
+        "Unusable",
+        "Not assessed"
+      ],
+      "required": false,
+      "section": "AI assessment"
+    },
+    "alert_presented": {
+      "type": "string",
+      "allowed": [
+        "Yes",
+        "No"
+      ],
+      "required": false,
+      "section": "Alert"
+    },
+    "clinical_disposition": {
+      "type": "string",
+      "required": false,
+      "section": "Clinical disposition"
+    },
+    "outcome_status": {
+      "type": "string",
+      "allowed": [
+        "Complete",
+        "Pending",
+        "Loss to follow-up",
+        "No complication documented",
+        "Complication documented"
+      ],
+      "required": false,
+      "section": "Outcome"
+    }
+  },
+  "source_precedence": [
+    "Explicit current user correction with identified source",
+    "Original patient source documentation",
+    "Derived values with documented inputs",
+    "Template rules",
+    "Fictional examples — never evidence"
+  ],
+  "example_data": {
+    "case_identification": {
+      "id": "DEMO-UCL-001",
+      "family": "DEMO",
+      "given": "Lena",
+      "dob": "14 Aug 2025",
+      "sex": "Female",
+      "hospital": "Fictional Teaching Hospital",
+      "country": "Austria (fictional case)",
+      "guardian": "Anna Demo / mother",
+      "status": "Closed — example",
+      "completed": "03 Mar 2026",
+      "by": "Dr A. Example",
+      "contact": "Yes"
+    },
+    "teleconsultation": {
+      "teleconsult_id": "TC-DEMO-001",
+      "consultation_datetime_utc": "03 Mar 2026 10:30 UTC",
+      "consultation_timezone": "UTC+01:00",
+      "consultation_channel": "Secure video call",
+      "clinician_reviewer": "R. Example, MD",
+      "caregiver_question": "Wound care and feeding guidance",
+      "clinical_summary": "Healed wound; no dehiscence; routine feeding",
+      "ai_model_name_version": "Fictional triage assistant v1.0 (demonstration only)",
+      "ai_assessment_tier": "Green",
+      "vision_finding": "No wound complication documented at recorded review",
+      "questionnaire_rule_tier": "Green",
+      "assessment_agreement": "Agrees",
+      "alert_presented": "No",
+      "nonpresentation_reason": "No alert indicated in recorded review",
+      "escalation_action": "Routine cleft follow-up",
+      "physician_approval": "R. Example, MD",
+      "clinical_disposition": "No wound complication documented",
+      "outcome_status": "Complete — demonstration only",
+      "follow_up_action_due": "Routine cleft follow-up",
+      "source_log_reference": "TC-DEMO-LOG-001",
+      "reviewer_signoff": "R. Example, MD",
+      "review_date": "03 Mar 2026",
+      "next_review": "Per local protocol",
+      "comments": "Fictional teleconsultation interaction; no clinical inference."
+    }
+  }
+}

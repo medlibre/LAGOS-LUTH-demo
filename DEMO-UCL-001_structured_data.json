@@ -1,0 +1,112 @@
+{
+  "is_fictional": true,
+  "clinical": {
+    "schema_version": "1.1",
+    "record_type": "fictional_completed_unilateral_cleft_lip_case",
+    "is_fictional": true,
+    "warning": "Demonstration data only. Never copy these values into a real patient record.",
+    "date_display_format": "DD MMM YYYY, matching the PDF",
+    "case_identification": {
+      "id": "DEMO-UCL-001",
+      "family": "DEMO",
+      "given": "Lena",
+      "dob": "14 Aug 2025",
+      "sex": "Female",
+      "hospital": "Fictional Teaching Hospital",
+      "country": "Austria (fictional case)",
+      "guardian": "Anna Demo / mother",
+      "status": "Closed — example",
+      "completed": "03 Mar 2026",
+      "by": "Dr A. Example",
+      "contact": "Yes"
+    },
+    "diagnosis_and_preoperative_assessment": {
+      "diagnosis": "Complete unilateral cleft lip",
+      "side": "Left",
+      "complete": "Complete",
+      "palate": "Not involved",
+      "previous": "No",
+      "anomalies": "None identified",
+      "weight": "7.2 kg",
+      "asa": "I",
+      "hb": "11.4 g/dL",
+      "allergies": "None known",
+      "clearance": "01 Feb 2026",
+      "anaes_assess": "02 Feb 2026",
+      "consent": "Signed 01 Feb 2026",
+      "photo_consent": "Signed 01 Feb 2026",
+      "preop_ref": "PRE-DEMO-001"
+    },
+    "operation_details": {
+      "procedure": "Primary unilateral cleft lip repair",
+      "technique": "Rotation–advancement",
+      "anaesthesia": "General endotracheal",
+      "opdate": "03 Feb 2026",
+      "start": "09:10",
+      "duration": "68 min",
+      "ebl": "5 mL",
+      "intraop": "None",
+      "immediate": "Stable; extubated",
+      "opnote": "OP-DEMO-001",
+      "plan": "Wound care, analgesia and feeding plan documented",
+      "discharge": "04 Feb 2026",
+      "followup": "03 Mar 2026"
+    },
+    "photography": {
+      "preoperative": {
+        "image": "FICTIONAL_PLACEHOLDER_ONLY",
+        "date": "02 Feb 2026",
+        "view": "Frontal",
+        "patient_id": "DEMO-UCL-001",
+        "postop_interval": "N/A — preoperative"
+      },
+      "postoperative": {
+        "image": "FICTIONAL_PLACEHOLDER_ONLY",
+        "date": "03 Mar 2026",
+        "view": "Frontal",
+        "patient_id": "DEMO-UCL-001",
+        "postop_interval": "4 weeks"
+      }
+    },
+    "outcome_followup_and_signoff": {
+      "wound": "Healed; no wound dehiscence",
+      "postop": "None recorded",
+      "further": "Routine cleft follow-up",
+      "outcome": "Satisfactory early wound healing and aesthetic outcome; continue local cleft follow-up protocol.",
+      "surgeon_sign": "A. Example, MD",
+      "surgeon_date": "03 Mar 2026",
+      "reviewer": "R. Example, MD",
+      "review_date": "03 Mar 2026"
+    },
+    "completeness_example": {
+      "status": "COMPLETE_DEMONSTRATION_DATA",
+      "note": "All demonstration fields are populated. Image boxes intentionally remain fictional placeholders and are not clinical photographs."
+    }
+  },
+  "teleconsultation": {
+    "teleconsult_id": "TC-DEMO-001",
+    "consultation_datetime_utc": "03 Mar 2026 10:30 UTC",
+    "consultation_timezone": "UTC+01:00",
+    "consultation_channel": "Secure video call",
+    "clinician_reviewer": "R. Example, MD",
+    "caregiver_question": "Wound care and feeding guidance",
+    "clinical_summary": "Healed wound; no dehiscence; routine feeding",
+    "ai_model_name_version": "Fictional triage assistant v1.0 (demonstration only)",
+    "ai_assessment_tier": "Green",
+    "vision_finding": "No wound complication documented at recorded review",
+    "questionnaire_rule_tier": "Green",
+    "assessment_agreement": "Agrees",
+    "alert_presented": "No",
+    "nonpresentation_reason": "No alert indicated in recorded review",
+    "escalation_action": "Routine cleft follow-up",
+    "physician_approval": "R. Example, MD",
+    "clinical_disposition": "No wound complication documented",
+    "outcome_status": "Complete — demonstration only",
+    "follow_up_action_due": "Routine cleft follow-up",
+    "source_log_reference": "TC-DEMO-LOG-001",
+    "reviewer_signoff": "R. Example, MD",
+    "review_date": "03 Mar 2026",
+    "next_review": "Per local protocol",
+    "comments": "Fictional teleconsultation interaction; no clinical inference."
+  }
+}
